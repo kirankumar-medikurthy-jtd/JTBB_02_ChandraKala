@@ -1,0 +1,14 @@
+<html>
+    <head>
+         <title>logos</title>
+    </head>
+  <body>
+  <h1> apps logos</h1>
+  
+      <a href="http://www.instagram.com/" ><img src="in.jpeg" alt="instagram"></a>
+      <a href=" http://www.whatsapp.com"><img src="whatsapp.png" alt="whatsapp"></a>
+      <a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook"></a>
+      <a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube"></a>
+      <a href="http://www.google.com/"><img src="google.png" alt="google"></a>
+  </body>
+</html>

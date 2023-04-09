@@ -1,0 +1,51 @@
+.body{
+	background:linear-gradient(to right,purple,orange);
+	margin:auto;
+	text-align:center;
+	margin-top:180px;
+}
+.user{
+
+	
+	outline:none;
+	border:none;
+	padding:20px 5px;
+	color:white;
+	border-bottom:1px solid white;
+	background-color:transparent;
+	color:skyblue;
+	margin:13px;
+	font-size:20px;
+}
+.pass{
+	outline:none;
+	border:none;
+	padding:20px 5px;
+	color:skyblue;
+	border-bottom:1px solid white;
+	background-color:transparent;
+	color:white;
+	margin:13px;
+	font-size:20px;
+
+}
+.log{
+	margin:auto;
+	padding:10px 40px;
+	color:white;
+	margin:25px;
+	border-radius:4px;
+	font-size:22px;
+	border:2px solid color;
+	background:linear-gradient(to right,purple,orange);
+}
+
+.white{
+	margin-left:110px;
+	color:white;
+	}
+a{
+color:white;
+margin-left:7px;
+}
+

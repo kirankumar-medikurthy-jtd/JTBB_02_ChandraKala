@@ -1,0 +1,122 @@
+
+<html>
+	<head>
+	<title>calculator</title>
+	<style>
+			.background
+			{
+				background-color:lightgreen;
+			}
+			.secondbox
+			{
+				width:400px;
+				background-color:skyblue;
+				padding:30px;
+				margin :auto;
+				margin-top:100px;
+			}
+			.taskbar
+			{
+				padding:31px;
+				background-color:white;
+				margin:0px 10px;
+			}
+			.button
+			{
+				display:flex;
+			}
+			.text
+			{
+				padding:20px;
+				margin:6px;
+				width:45px;
+				font-size:24px;
+				text-align:center;
+				margin-top:15px;
+				margin-left:10px;
+			}
+			.white
+			{
+				background-color:white;
+			}
+			.pink
+			{
+				background-color:pink;
+			}
+			.yellow{
+				background-color:yellow;
+			}
+	</style>
+ 
+        </head>
+
+        <body class="background">
+
+                   <div class="secondbox">
+                                 <div class="taskbar"></div>
+                                 <div class="button">
+
+                                      <div class="white text">1</div>
+                                      <div class="white text">2</div>
+                                      <div class="white text">3</div>
+                                      <div class="yellow text">+</div>
+                                 </div>
+
+                                 <div class="button">
+
+                                      <div class="white text">4</div>
+                                      <div class="white text">5</div>
+                                      <div class="white text">6</div>
+                                      <div class="yellow text">-</div>
+                                 </div>
+                                 <div class="button">
+
+                                      <div class="white text">7</div>
+                                      <div class="white text">8</div>
+                                      <div class="white text">9</div>
+                                      <div class="yellow text">*</div>
+                                 </div>
+
+                                 <div class="button">
+
+                                      <div class="pink text">c</div>
+                                      <div class="white text">0</div>
+                                      <div class="white text">=</div>
+                                      <div class="yellow text">/</div>
+                                 </div>
+                	</div>
+              </div>
+        </body>
+        
+        <script type="text/javascript">
+		let keys=document.querySelectorAll(".button");
+		let bag="";
+			for(let i=0;i<keys.length;i++){
+			keys[i].addEventListener("click",resultoutput);
+			}
+			
+			
+			function resultoutput(event){
+			let num=event.target.innerText;
+				if(num==="c"){
+				bag="";
+				document.querySelector(".taskbar").innerText=bag;
+				}
+				else if(num== "=")
+				{
+				let res=eval(bag);
+				document.querySelector(".taskbar").innerText=res;
+				}
+				else
+				{
+				bag+=num;
+				document.querySelector(".taskbar").innerText=bag;
+				}
+			}
+				
+				
+			
+				
+			
+		</script>
+</html>

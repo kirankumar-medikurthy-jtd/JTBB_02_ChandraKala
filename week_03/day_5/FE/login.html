@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>login page</title>
+		<style>
+		.headline
+		{
+			color:red;
+		}
+		.displayflex
+		{
+			display:flex;
+			flex-direction:column;
+		}
+		.yourname
+		{
+			width:300px;
+			height:60px;
+			margin-top:2px;
+		}
+		.password
+		{
+			width:300px;
+			height:60px;
+			margin-top:2px;
+			
+		}
+		.login
+		{
+			width:300px;
+			height:60px;
+			margin-top:2px;
+			
+		}
+		
+		</style>
+		
+	</head>
+	<body>
+		<div class="headline"><h2>Login page</h2></div>
+			<div   class="displayflex">
+			<input class="yourname" type="text" placeholder="Enter your full name"/>
+			<input class="password" type="password" placeholder="password"/>
+			<input class="login" type="submit" value="login"/>
+			</div>
+		<div class="userDetails">
+		</div>
+	</body>
+	<script type="text/javascript">
+	let yournameTag=document.querySelector(".yourname");
+	console.log(yournameTag);
+	let passwordTag=document.querySelector(".password");
+	let loginTag=document.querySelector(".login");
+	console.log(loginTag);
+		loginTag.onclick = function(){
+		let store = document.createElement("div");
+		let NameTag = document.createElement("div");
+		NameTag.textContent="Name : " + (yournameTag.value);
+		//console.log(NameTag);
+		let passTag=document.createElement("div");
+		passTag.textContent="Password :" + (passwordTag.value);
+		store.append(NameTag,passTag);
+		//console.log(passTag)
+		let userdetailsTag = document.querySelector(".userDetails");
+		userdetailsTag.append(store);
+		
+		}
+		
+		
+	</script>
+</html>

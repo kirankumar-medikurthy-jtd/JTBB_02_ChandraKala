@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  class ="click" >Click me</button>
+    <button  class ="clear" >Clear</button>
+    
+    <div class ="add"></div>
+    <script>
+        
+    let  click = document.querySelector(".click");
+    
+     click.onclick = function()
+      {
+        let flag = false;
+        if( !false){
+            click.innerHTML = "write about something behavioural interview and coding"
+            click.style.color ="red";
+            click.style.width ="500px"
+            click.style.width ="300px"
+            click.style.backgroundColor ="black"
+        }else{
+            click.style.innerHTML ="";
+            click.innerHTML = "write about yourself"
+        }
+        
+        let add = document.querySelector(".add");
+        add.append(click);
+      }
+    </script>
+    
+</body>
+</html>

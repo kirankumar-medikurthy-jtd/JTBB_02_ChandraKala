@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> TODO LIST</h2>
+            <input class="name" type ="text" placeholder="name"/>
+            <button class="submit">submit</button>
+            <button class="Remove">Remove</button>
+            <div class="Display"></div>
+</body>
+<script>
+    let submit = document.querySelector(".submit");
+    submit.onclick = function()
+    {
+        let name = document.querySelector(".name").value;
+        let Display = document.querySelector(".Display");
+        Display.style.width ="200px";
+        Display.style.height ="300px";
+        Display.style.border ="2px solid black";
+        Display.style.marginTop ="30px";
+        Display.style.backgroundColor ="blue";
+        Display.append(name);
+        let Remove = document.querySelector(".Remove");
+        Remove.onclick = function()
+        {
+            name.innerHTML = "";
+            let Display = document.querySelector(".Display");
+            // Display.append(name);
+        }
+}
+</script>
+</html>
